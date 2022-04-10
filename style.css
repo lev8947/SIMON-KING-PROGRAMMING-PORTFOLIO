@@ -1,0 +1,210 @@
+
+* {
+    box-sizing: border-box;
+  }
+  /*Font family added using google fonts*/
+  body {
+    font-family: 'Sanchez', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+  }
+  /*Header has unique font*/
+  header {
+    padding: 80px;
+    text-align: center;
+    background: white;
+    color: rgba(226, 30, 0, 0.644);
+    font-size: xx-large;
+    font-family: 'Orbitron', sans-serif;
+  }
+
+
+  /* Nav style is column for mobile */
+  nav {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    justify-content: flex-end;
+  }
+  
+/*navigation link styles */
+  nav a {
+    color: red;
+    background-color: rgb(209, 20, 20);
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  /* mouse over link */
+    a:hover {
+      color: var(--midpurple);
+  }
+  
+  /* selected link */
+    a:active {
+      color: var(--blue);
+  }
+/* flex wrap elements for accessible viewing*/
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  
+  /*sections for breaking up content - includes clear header*/
+  section {
+    background-size: cover;
+    background-color: white;
+    padding: 20px;
+    color: black;
+  }
+  /*background image for content and images- flex. Background colour for slow browser*/
+  article {
+      padding: 5px;
+      align-content: center;
+      padding: 1px;
+      
+      background-size: cover;
+      background-repeat: repeat;
+      background-color: rgba(87, 87, 84, 0.665);
+      flex-wrap:wrap;
+      display:flex;
+      justify-content: center;
+      align-items: stretch;
+  }
+
+  footer {
+    padding: 20px;
+    text-align: center;
+    background-image: url(./assets/lips-bot.png);
+    background-size: cover;
+    color: rgba(226, 30, 0, 0.644);
+  }
+
+  h2 {
+    font-size: xx-large;
+    font-family: 'Orbitron', sans-serif;
+  }
+/*change colour for main project*/
+  .WedHub {
+    background-size: cover;
+    text-align: right;
+    color: rgb(238, 12, 144);
+    
+  }
+/*larger image and content section for main project - no larger than mobile screen width*/
+  .Majorproject {
+    margin: 5px;
+    padding: 20px 20px 20px 20px;
+    border: 3px solid black;
+    justify-items: center;
+    align-items: stretch;
+    text-align: center;
+    width: 300px;
+    height: auto;
+
+  }
+  .Majorproject img {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+/*change colour for main project*/
+  .Majorproject:hover {
+    border: 1px solid rgb(0, 255, 38);
+  }
+  
+/* matching card styles for other projects and content*/
+  div.gallery {
+    margin: 5px;
+    padding: 20px 20px 20px 20px;
+    border: 5px solid black;
+    justify-items: center;
+    align-items: stretch;
+    text-align: center;
+    width: 200px;
+    height: auto;
+    font-size: x-small;
+
+  }
+
+  div.gallery:hover {
+    border: 10px solid rgba(226, 30, 0, 0.644);
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
+/*Contact info*/
+  .Contactme {
+    text-align: center;
+    background-color: rgba(106, 106, 106, 0.912);
+  }
+
+  div.center {
+    margin: 20px 5px 20px;
+    
+    border: 3px solid rgb(0, 255, 64);
+    width: 200px;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  div.center:hover {
+    border: 10px solid rgb(255, 0, 115);
+  }
+
+/*Designed for mobile in initial build - adjustments for desktops*/
+
+  @media screen and (min-width: 768px) {
+
+    header {
+      background: url(./assets/lips3.png);
+      background-size: cover;
+    }
+/*horizontal header in desktop display*/
+    nav {
+      flex-direction: row;
+    }
+
+    section {
+      flex-wrap: wrap;
+    }
+  
+    nav,
+    footer {
+      background-color: rgb(209, 20, 20);
+    }
+
+    /*larger image for main project on desktop*/
+    .Majorproject {
+      width: 700px;
+      height: auto;
+    }
+/*larger font and width for desktop*/
+    div.gallery {
+      flex-direction: row;
+      justify-content: center;
+      width: 300px;
+      font-size: medium;
+    }
+    .Contactme {
+      flex-direction: column;
+    }
+  }
+
+  h4 {
+      text-align: left;
+  }
