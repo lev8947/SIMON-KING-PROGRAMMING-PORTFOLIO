@@ -18,6 +18,15 @@
   }
 
 
+  .poita {
+    background-image: url(./assets/liptest.png);
+    background-size: cover;
+  }
+ 
+  .forged {
+    background-color: rgba(87, 87, 84, 0.665);
+  }
+
   /* Nav style is column for mobile */
   nav {
     display: flex;
@@ -34,6 +43,10 @@
     text-decoration: none;
     text-align: center;
     font-family: 'Orbitron', sans-serif;
+  }
+
+  h1 {
+    margin-top: 100px;
   }
 
   a {
@@ -61,7 +74,7 @@
     background-size: cover;
     background-color: white;
     padding: 20px;
-    color: black;
+    color: rgba(0, 0, 0, 0.897);
   }
   /*background image for content and images- flex. Background colour for slow browser*/
   article {
@@ -132,6 +145,7 @@
     width: 200px;
     height: auto;
     font-size: x-small;
+    text-align: left;
 
   }
 
